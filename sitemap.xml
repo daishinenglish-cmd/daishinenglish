@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -10,4 +11,18 @@
         <loc>https://yourdomain.com/esports.html</loc>
     </url>
 
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://yourdomain.com/</loc>
+    </url>
+
+    <url>
+        <loc>https://yourdomain.com/esports.html</loc>
+    </url>
+
+>>>>>>> 142acc17e5fe965e5a93f04c141e3b39eca4705b
 </urlset>
