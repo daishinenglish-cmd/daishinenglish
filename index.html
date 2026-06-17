@@ -160,23 +160,59 @@
 		}
 
 		.btn-primary {
-			background: var(--primary);
-			color: white;
-			box-shadow: 0 10px 25px rgba(29, 78, 216, 0.35);
+			  		 background: linear-gradient(
+        135deg,
+        #00d4ff,
+        #2563eb,
+        #7c3aed
+    );
+
+    	color: white;
+    	border: none;
+
+    	box-shadow:
+        0 0 15px rgba(0,212,255,.30),
+        0 0 30px rgba(37,99,235,.25),
+        0 0 45px rgba(124,58,237,.20);
+
+   		transition: all .3s ease;
 		}
 
 		.btn-primary:hover {
-			background: #1e40af;
-			transform: translateY(-4px);
+    	transform: translateY(-4px) scale(1.05);
+
+    	box-shadow:
+        0 0 20px rgba(0,212,255,.45),
+        0 0 40px rgba(37,99,235,.35),
+        0 0 60px rgba(124,58,237,.30);
 		}
 
 		.btn-secondary {
-			background: white;
-			color: var(--primary);
+   		 background: linear-gradient(
+        135deg,
+        #00d4ff,
+        #2563eb,
+        #7c3aed
+    );
+
+    	color: white;
+    	border: none;
+
+    	box-shadow:
+        0 0 15px rgba(0,212,255,.30),
+        0 0 30px rgba(37,99,235,.25),
+        0 0 45px rgba(124,58,237,.20);
+
+   		transition: all .3s ease;
 		}
 
 		.btn-secondary:hover {
-			transform: translateY(-4px);
+    	transform: translateY(-4px) scale(1.05);
+
+    	box-shadow:
+        0 0 20px rgba(0,212,255,.45),
+        0 0 40px rgba(37,99,235,.35),
+        0 0 60px rgba(124,58,237,.30);
 		}
 
 		section {
@@ -386,54 +422,55 @@
 		}
 		.esports-feature{
 
-    padding:80px 8%;
+    	padding:80px 8%;
 
-    background:#0f172a;
-}
+    	background:#0f172a;
+		}
 
-.esports-feature-content{
+		.esports-feature-content{
 
-    max-width:1400px;
+    	max-width:1400px;
 
-    margin:0 auto;
+    	margin:0 auto;
 
-    display:grid;
+    	display:grid;
 
-    grid-template-columns:1fr 1fr;
+    	grid-template-columns:1fr 1fr;
 
-    gap:50px;
+    	gap:50px;
 
-    align-items:center;
-}
+    	align-items:center;
+		}
 
-.esports-image img{
+		.esports-image img{
 
-    width:100%;
+    	width:100%;
 
-    border-radius:20px;
+    	border-radius:20px;
 
-    border:1px solid rgba(96,165,250,.3);
-}
+    	border:1px solid rgba(96,165,250,.3);
+		}
 
-.esports-text h2{
+		.esports-text h2{
 
-    font-size:2.5rem;
+    	font-size:2.5rem;
 
-    margin-bottom:20px;
+    	margin-bottom:20px;
 
-    color:white;
-}
+    	color:white;
+		}
 
-.esports-text p{
+		.esports-text p{
 
-    font-size:1.15rem;
+    	font-size:1.15rem;
 
-    line-height:1.8;
+    	line-height:1.8;
 
-    margin-bottom:30px;
+    	margin-bottom:30px;
 
-    color:#cbd5e1;
-}
+    	color:#cbd5e1;
+		}
+		
 @media(max-width:768px){
 
     .esports-feature-content{
@@ -445,14 +482,20 @@
 
         text-align:center;
     }
-}
-.promo-btn{
+	}
+	.promo-btn{
 
     display:inline-block;
 
     padding:24px 60px;
 
-    background:#2563eb;
+    background: linear-gradient(
+    135deg,
+    #00c6ff,
+    #2563eb,
+    #7c3aed
+);
+
 
     color:white;
 
@@ -468,17 +511,21 @@
 
     transition:.3s;
 
-    box-shadow:
-        0 0 25px rgba(59,130,246,.5);
-}
+ 	box-shadow:
+    0 0 15px rgba(0,198,255,.30),
+    0 0 30px rgba(37,99,235,.25),
+    0 0 45px rgba(124,58,237,.20);
+	}
 
-.promo-btn:hover{
+	.promo-btn:hover{
 
     transform:translateY(-4px) scale(1.05);
 
     box-shadow:
-        0 0 40px rgba(59,130,246,.9);
-}
+        0 0 20px rgba(0,198,255,.40),
+        0 0 40px rgba(37,99,235,.35),
+        0 0 60px rgba(124,58,237,.30);
+	}
 		
 		</style>
 </head>
@@ -494,11 +541,12 @@
 			</div>
 
 			<div class="nav-links">
-				<a href="#about">About</a>
-				<a href="#courses">Classes</a>
-				<a href="esports.html">Esports</a>
-				<a href="#booking">Booking</a>
-				<a href="#contact">Contact</a>
+				<a href="#about">About / 会社概要</a>
+				<a href="#courses">Classes / クラス紹介</a>
+				<a href="esports.html">Esports / eスポーツ</a>
+				<a href="#booking">Booking / 予約</a>
+				<a href="#contact">Contact / お問い合わせ</a>
+  			
 			</div>
 
 		</nav>
@@ -533,8 +581,17 @@
     	</a>
 
     	<a href="esports.html" class="btn btn-secondary">
-        Explore Esports English / eスポーツ英語をチェック
+        Explore Esports English <br>
+		Coming Soon
+		ゲームとEスポーツで学ぶ英語
+		近日公開
     	</a>
+
+		<a href="school-english.html" class="promo-btn">
+			Explore School & EIKEN
+			英検・学校英語をチェック
+		</a>
+
 		</div>
 
 	</div>
@@ -558,6 +615,7 @@
     <h2>
         🎮 Esports & Sim Racing English
 		Esports English /eスポーツ英語
+		COMING SOON! / 準備中
     </h2>
 
     <p class="english-text">
