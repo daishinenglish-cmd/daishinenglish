@@ -632,7 +632,9 @@
     background:#3b82f6;
 
     transform:translateY(-2px);
-}.menu-toggle {
+}
+
+.menu-toggle {
     display: none;
     font-size: 2rem;
     cursor: pointer;
@@ -655,8 +657,6 @@
         display: flex !important;
     }
 
-}
-
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -669,6 +669,7 @@
 
 
 
+
 		
 		</style>
 </head>
@@ -678,28 +679,23 @@
 	<header>
 		
 		<nav>
-	<div class="menu-toggle" id="mobile-menu">☰</div>
-
-	<div class="nav-links" id="nav-links">	
-
-		</div>
-
-		<div class="logo">
-
-    	<img src="src/resources/images/logo.png"
+   	<div class="logo">
+    <img src="src/resources/images/logo.png"
          alt="Daishin Logo"
          class="nav-logo">
-    	 <span class="logo-text">Daishin English Education</span>
+    <span class="logo-text">Daishin English Education</span>
 
-		</div>
+	</div>
 
-			<div class="nav-links" id="nav-links"></div>
-				<a href="#about">About <br> 会社概要</a>
-				<a href="#courses">Classes <br> クラス紹介</a>
-				<a href="esports.html">Esports <br> eスポーツ</a>
-				<a href="#contact">Contact <br> お問い合わせ</a>
-  			
-			</div>
+	<div class="menu-toggle" id="mobile-menu">☰</div>
+
+	<div class="nav-links" id="nav-links">
+    <a href="#about">About <br> 会社概要</a>
+    <a href="#courses">Classes <br> クラス紹介</a>
+    <a href="esports.html">Esports <br> eスポーツ</a>
+    <a href="#contact">Contact <br> お問い合わせ</a>
+
+	</div>
 
 		</nav>
 
@@ -1125,7 +1121,8 @@
 	document.getElementById('mobile-menu').addEventListener('click', function() {
     document.getElementById('nav-links').classList.toggle('active');
 	});
-</script>
+	</script>
+
 
 </body>
 
