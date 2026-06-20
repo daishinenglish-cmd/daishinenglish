@@ -25,9 +25,7 @@
 		}
 
 		body {
-			background:body{
-    background:#d8dee8;
-}
+			background:#d8dee8;
 			color: #1f2937;
 			overflow-x: hidden;
 		}
@@ -39,6 +37,28 @@
 			--dark: #0b1120;
 			--light: #f1f5f9;
 			--white: #ffffff;
+		}
+		.site-logo{
+    	height:100px;
+    	width:auto;
+    	display:block;
+    	margin:0 auto 10px auto;
+		}
+		.logo{
+    	display:flex;
+    	align-items:center;
+    	gap:10px;
+		font-size: 2rem;
+    	font-weight: 700;
+		}
+
+		.nav-logo{
+    	height:50px;
+    	width:auto;
+		}
+		.logo-text {
+   		 font-size: 2rem;
+    	font-weight: 700;
 		}
 
 		header {
@@ -62,7 +82,7 @@
 		}
 
 		.logo {
-			font-size: 1.6rem;
+			font-size: 2rem;
 			font-weight: 800;
 			color: var(--primary);
 			line-height: 1.2;
@@ -70,9 +90,9 @@
 
 		.logo span {
 			display: block;
-			font-size: 0.9rem;
+			font-size: 1.25rem;
 			font-weight: 500;
-			color: #64748b;
+			color: #1e40af;
 		}
 
 		.nav-links {
@@ -624,18 +644,23 @@
 <body>
 
 	<header>
-
+		
 		<nav>
 
-			<div class="logo">
-				Daishin English Education
-			</div>
+		<div class="logo">
+
+    	<img src="src/resources/images/logo.png"
+         alt="Daishin Logo"
+         class="nav-logo">
+    	 <span class="logo-text">Daishin English Education</span>
+
+		</div>
 
 			<div class="nav-links">
-				<a href="#about">About / 会社概要</a>
-				<a href="#courses">Classes / クラス紹介</a>
-				<a href="esports.html">Esports / eスポーツ</a>
-				<a href="#contact">Contact / お問い合わせ</a>
+				<a href="#about">About <br> 会社概要</a>
+				<a href="#courses">Classes <br> クラス紹介</a>
+				<a href="esports.html">Esports <br> eスポーツ</a>
+				<a href="#contact">Contact <br> お問い合わせ</a>
   			
 			</div>
 
