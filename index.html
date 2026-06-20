@@ -646,16 +646,16 @@
     }
 
     .nav-links {
-        display: none;
+        display: none !important;
         flex-direction: column;
         width: 100%;
-        gap: 15px;
-        margin-top: 15px;
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex !important;
     }
+
+}
 
     nav {
         flex-direction: column;
@@ -678,9 +678,9 @@
 	<header>
 		
 		<nav>
+	<div class="menu-toggle" id="mobile-menu">☰</div>
 
-		<div class="menu-toggle" id="mobile-menu">
-   		 ☰
+	<div class="nav-links" id="nav-links">	
 
 		</div>
 
