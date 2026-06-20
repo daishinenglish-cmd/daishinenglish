@@ -100,15 +100,14 @@
 			gap: 32px;
 		}
 
-		.nav-links a {
-			text-decoration: none;
-			color: #334155;
-			font-weight: 600;
-			transition: 0.3s;
+		.nav-links a,
+		.nav-links a:visited {
+    	color: #2563eb;
+    	text-decoration: none;
 		}
 
 		.nav-links a:hover {
-			color: var(--primary);
+    	color: #3b82f6;
 		}
 
 		.hero {
@@ -633,6 +632,39 @@
     background:#3b82f6;
 
     transform:translateY(-2px);
+}.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-text {
+        font-size: 1.4rem;
+    }
 }
 
 
@@ -647,6 +679,11 @@
 		
 		<nav>
 
+		<div class="menu-toggle" id="mobile-menu">
+   		 ☰
+
+		</div>
+
 		<div class="logo">
 
     	<img src="src/resources/images/logo.png"
@@ -656,7 +693,7 @@
 
 		</div>
 
-			<div class="nav-links">
+			<div class="nav-links" id="nav-links"></div>
 				<a href="#about">About <br> 会社概要</a>
 				<a href="#courses">Classes <br> クラス紹介</a>
 				<a href="esports.html">Esports <br> eスポーツ</a>
@@ -1082,6 +1119,13 @@
 		</p>
 
 	</footer>
+
+	<script>
+
+	document.getElementById('mobile-menu').addEventListener('click', function() {
+    document.getElementById('nav-links').classList.toggle('active');
+	});
+</script>
 
 </body>
 
