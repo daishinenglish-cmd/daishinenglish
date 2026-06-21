@@ -7,6 +7,60 @@
     <title>School & EIKEN | Daishin English Education</title>
 
     <style>
+        .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.nav-logo{
+    height:60px;
+    width:auto;
+}
+
+.logo-text{
+    font-size:1.4rem;
+    font-weight:700;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(12px);
+    box-shadow:0 6px 25px rgba(0,0,0,0.06);
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.nav-links{
+    display:flex;
+    gap:32px;
+}
+
+.nav-links a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.nav-links a:hover{
+    color:#3b82f6;
+}
+body{
+    padding-top:100px;
+}
     body {
         font-family: 'Segoe UI', Arial, sans-serif;
         margin: 0;
@@ -109,6 +163,30 @@ ul{
 
 </head>
 <body>
+    <header>
+
+<nav>
+
+<div class="logo">
+    <img src="src/resources/images/logo.png"
+         alt="Daishin Logo"
+         class="nav-logo">
+    <span class="logo-text">DEE</span>
+</div>
+
+<div class="menu-toggle" id="mobile-menu">☰</div>
+
+<div class="nav-links" id="nav-links">
+    <a href="index.html#about">会社概要</a>
+    <a href="index.html#courses">クラス紹介</a>
+    <a href="school-english.html">英検対策</a>
+    <a href="index.html#contact">お問い合わせ</a>
+    <a href="course.html">法人向け研修</a>
+</div>
+
+</nav>
+
+</header>
   <div class="content"></div>
   <div class="card">
 <h1>School English & EIKEN Preparation</h1>
@@ -125,7 +203,7 @@ ul{
 
 
 <p>
-当スクールでは、学校の成績向上、英検対策、そして実践的な英語コミュニケーション能力の向上を目指したレッスンを提供しています。
+DEEでは、学校の成績向上、英検対策、そして実践的な英語コミュニケーション能力の向上を目指したレッスンを提供しています。
 </p>
 <h3>EIKEN / 英検対策</h3>
 
@@ -200,7 +278,7 @@ ul{
 </ul>
 <p>
     
-    Daishin English Educationでは、英検、TOEIC、TOEFL、IELTS、GTEC、TEAP、ケンブリッジ英語検定、学校英語、受験英語、実践的な英語コミュニケーションの指導を行っています。
+    DEEでは、英検、TOEIC、TOEFL、IELTS、GTEC、TEAP、ケンブリッジ英語検定、学校英語、受験英語、実践的な英語コミュニケーションの指導を行っています。
 </p>
 
 </div>
